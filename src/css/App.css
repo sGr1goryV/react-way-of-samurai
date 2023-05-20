@@ -1,0 +1,26 @@
+body {
+  background-color: aqua;
+}
+
+/*block header*/
+.block-header ul {
+  display: flex;
+}
+.block-header ul li {
+  margin: 0 0 0 50px;
+  margin: auto;
+  list-style-type: none;
+  font-size: 20px;
+}
+.block-header ul li a {
+  text-decoration: none;
+  color: red;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+/*block midle*/
+.block-midle {
+  width: 200px;
+  margin: auto;
+}

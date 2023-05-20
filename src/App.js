@@ -1,18 +1,15 @@
-import './App.css';
-import './zeroing.css';
+import './css/App.css';
+import './css/zeroing.css'
+import Midle from './blocks/Midle';
+import Header from './blocks/Header';
 
-const App = () => {
+function App() {
   return (
-    <div className="container">
-      <div className="App">
-        <ul>
-          <li>BMW</li>
-          <li>MERCEDEC</li>
-          <li>AUDi</li>
-        </ul>
-      </div>
-    </div>
-
+  <div className='container'>
+    <Header />
+    <Midle />
+  </div>
+    
   );
 }
 
