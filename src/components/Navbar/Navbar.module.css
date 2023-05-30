@@ -1,0 +1,22 @@
+/*block midle*/
+.navbar {
+    background-color: #639999;
+    grid-area: navbar;
+    text-align: center;
+  }
+
+  .item{
+    margin: 20px 0 0 0;
+    font-size: 20px;
+  }
+  .item a {
+    color: rgba(255, 217, 0, 0.613);
+  }
+
+  .active a{
+    font-size: 25px;
+  }
+
+
+
+

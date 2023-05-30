@@ -1,0 +1,11 @@
+.profile {
+    background-color: #4e6bde;
+    height: 40px;
+    grid-area: profile;
+    height: 500px;
+}
+
+img {
+    width: 1200px;
+    height: 500px;
+}
