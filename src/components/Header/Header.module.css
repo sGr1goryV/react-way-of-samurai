@@ -1,0 +1,14 @@
+.header {
+  background-color: #014f5ee7;
+  grid-area: header;
+}
+.header img {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 70px;
+  height: 70px;
+  opacity: 0.4;
+  border-radius: 15px;
+}
+
+

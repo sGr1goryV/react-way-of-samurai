@@ -1,18 +1,17 @@
 .profile {
-    /* background: url(./img/bladerunner.jpg); */
     grid-area: profile;
     color: gold;
+    background: url(./img/bg.jpg) no-repeat;
+    background-size: cover;
     height: 500px;
-    background: url(./bg.jpg);
-    background-size: cover;  
 }
 
 
-.posts {
-    background-color: rgba(43, 89, 150, 0.708);
-    margin: 185px 0 0 0;
-    height: 300px;
-    width: 300px;
+.container_posts {
+    background-color: rgba(43, 89, 150, 0.2);
+    margin: 250px 0 0 300px;
+    height: 235px;
+    width: 680px;
 }
 .posts button {
     display: block;

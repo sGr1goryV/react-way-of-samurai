@@ -1,6 +1,6 @@
 /*block midle*/
 .navbar {
-    background-color: #639999af;
+    background-color: #439199af;
     grid-area: navbar;
     text-align: center;
   }
@@ -11,10 +11,11 @@
   }
   .item a {
     color: rgba(255, 217, 0, 0.613);
+      letter-spacing: 1px;
   }
 
   .active a{
-    font-size: 25px;
+    color: #b90202;
   }
 
 

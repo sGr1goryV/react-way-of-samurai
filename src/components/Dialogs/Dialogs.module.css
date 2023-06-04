@@ -1,0 +1,5 @@
+.wrapper {
+    height: 500px;
+    background: url(img/bg_d.jpg) no-repeat;
+    background-size: cover;
+}
