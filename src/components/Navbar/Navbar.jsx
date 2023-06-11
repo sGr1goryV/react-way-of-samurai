@@ -3,8 +3,6 @@ import s from './Navbar.module.css';
 import {NavLink} from 'react-router-dom'
 
 //this code is working
-const setActive2 = (navData) => navData.isActive ? s.active : "";
-
 const setActive = ({isActive}) => isActive ? s.active : "";
 
 const Navbar = () => {
