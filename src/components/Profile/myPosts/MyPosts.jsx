@@ -1,13 +1,18 @@
 import React from "react";
-import s from '../Profile.module.css'
 import Post from "./Post/Post";
+import s from './MyPosts.module.css'
 
 const MyPosts = () => {
     return (
-            <div className={s.container_posts}>
+            <div className={s.container}>
                 <h2>my posts</h2>
-                <textarea></textarea>
-                <button>Post</button>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>Post</button>
+                </div>
+
                 <Post message='hello' like='3'/>
                 <Post message='i am lonely' like='0'/>
             </div>

@@ -4,9 +4,11 @@
 }
 
 .post img {
-    width: 70px;
-    border-radius: 10px;
-    
+    border: solid 1px black;
+    width: 50px;
+    height: 55px;
+
+
 }
 .post span {
     display: block;

@@ -1,0 +1,16 @@
+.container {
+    height: 250px;
+    overflow: hidden;
+}
+.wrapper {
+    margin: 0 0 0 15px;
+}
+.imageBlock img {
+    margin: 15px 0 0 0;
+    border: solid 5px black;
+    width: 150px;
+    height: 165px;
+}
+.discriptionBlock {
+    margin: 20px 0 0 0;
+}

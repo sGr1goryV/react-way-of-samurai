@@ -18,9 +18,12 @@
     margin-bottom: 10px;
 }
 .dialogs_items .active {
-    color: #f5e906;
+    color: #b79b0f;
 }
 
 .messages .message {
     margin-bottom: 10px;
+}
+.messages .active {
+    color: #b79b0f;
 }
