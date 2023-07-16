@@ -1,14 +1,8 @@
 .profile {
-    grid-area: profile;
     color: #b79b0f;
     background: url(./img/bg.jpg) no-repeat;
     background-size: cover;
     height: 500px;
 }
 
-.posts button {
-    display: block;
-    width: 50px;
-    height: 20px;
-    margin: 3px 0 15px 90px;
-}
+

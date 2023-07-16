@@ -1,10 +1,16 @@
 import React from "react";
 import Post from "./Post/Post";
-import s from './MyPosts.module.css'
+import styles from './MyPosts.module.css'
 
 const MyPosts = () => {
+
+    let postDate = [
+        {message: 'hello', countLike: 4},
+        {message: 'i am lonely', countLike: 34},
+    ]
+
     return (
-            <div className={s.container}>
+            <div className={styles.container}>
                 <h2>my posts</h2>
                 <div>
                     <textarea></textarea>
@@ -13,8 +19,8 @@ const MyPosts = () => {
                     <button>Post</button>
                 </div>
 
-                <Post message='hello' like='3'/>
-                <Post message='i am lonely' like='0'/>
+                <Post message={postDate[0].message} countLike={postDate[0].countLike}/>
+                <Post message={postDate[1].message} countLike={postDate[1].countLike}/>
             </div>
     )
 }

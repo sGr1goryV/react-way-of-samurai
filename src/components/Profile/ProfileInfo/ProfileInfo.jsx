@@ -1,15 +1,15 @@
 import React from "react";
 import avatar from './img/avatar_offecerK.png';
-import s from './ProfileInfo.module.css';
+import styles from './ProfileInfo.module.css';
 
 const ProfileInfo = (props) => {
         return (
-            <div className={s.container}>
-                <div className={s.wrapper}>
-                    <div className={s.imageBlock}>
+            <div className={styles.container}>
+                <div className={styles.wrapper}>
+                    <div className={styles.imageBlock}>
                         <img src={avatar}/>
                     </div>
-                    <div className={s.discriptionBlock}>
+                    <div className={styles.discriptionBlock}>
                         Illusion is the first of all pleasures.
                     </div>
                 </div>

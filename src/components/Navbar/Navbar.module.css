@@ -7,16 +7,18 @@
 
   .item{
     margin: 20px 0 0 0;
-    font-size: 20px;
   }
+
   .item a{
-    color: rgba(255, 255, 255, 0.49);
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.49);
       font-weight: 400;
       letter-spacing: 1px;
   }
 
 
 .item .active {
-    color: rgba(7, 37, 119, 0.76);
+    color: rgba(0, 0, 0, 0.68);
+    font-weight: 500;
 }
 

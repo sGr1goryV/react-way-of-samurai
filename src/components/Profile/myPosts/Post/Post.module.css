@@ -7,9 +7,12 @@
     border: solid 1px black;
     width: 50px;
     height: 55px;
-
-
 }
-.post span {
+
+.message_Class {
+    display: inline-block;
+}
+
+.like_Class {
     display: block;
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import avatar from '../../ProfileInfo/img/avatar_offecerK.png'
-import s from './Post.module.css'
+import styles from './Post.module.css'
 
 const Post = (props) => {
     return(
-        <div className={s.post}>
+        <div className={styles.post}>
             <img src={avatar}/>
-            {props.message}
-            <span>like {props.like}</span>
+            <span className={styles.message_Class}>{props.message}</span>
+            <span className={styles.like_Class}>like {props.countLike}</span>
         </div>
     );
 }
