@@ -33,20 +33,22 @@ const Dialogs = () => {
         {id: 3, message: 'why?'}
     ]
 
+    let diablogsElements = dialogsDate.map(d => {
+        return <DialogItem id={d.id} name={d.name}/>
+    })
+    let messagesElements = messagesDate.map(m => {
+        return <MessagesItem id={m.id} message={m.message}/>
+    })
+
+
     return (
         <div className={styles.container}>
             <div className={styles.dialogs}>
                 <div className={styles.dialogs_items}>
-                    <DialogItem id={dialogsDate[0].id} name={dialogsDate[0].name} />
-                    <DialogItem id={dialogsDate[1].id} name={dialogsDate[1].name}/>
-                    <DialogItem id={dialogsDate[2].id} name={dialogsDate[2].name}/>
-                    <DialogItem id={dialogsDate[3].id} name={dialogsDate[3].name}/>
-                    <DialogItem id={dialogsDate[4].id} name={dialogsDate[4].name}/>
+                    {diablogsElements}
                 </div>
                 <div className={styles.messages}>
-                    <MessagesItem id={messagesDate[0].id} message={messagesDate[0].message}/>
-                    <MessagesItem id={messagesDate[1].id} message={messagesDate[1].message}/>
-                    <MessagesItem id={messagesDate[2].id} message={messagesDate[2].message}/>
+                    {messagesElements}
                 </div>
             </div>
         </div>
