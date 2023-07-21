@@ -3,12 +3,16 @@ import MyPosts from "./myPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import style from './Profile.module.css';
 
-const Profile = () => {
+
+const Profile = (props) => {
+
+
+
     return (
 
         <div className={style.profile}>
             <ProfileInfo/>
-            <MyPosts/>
+            <MyPosts postDate={props.postDate}/>
         </div>
     )
 }

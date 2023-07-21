@@ -11,7 +11,10 @@ import Settings from "./components/Settings/Settings.jsx";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 
-function App() {
+function App(props) {
+
+
+
   return (
       <BrowserRouter>
           <div className="container">
@@ -19,8 +22,10 @@ function App() {
               <Navbar />
               <div>
                   <Routes>
-                      <Route path="/" element={<Profile/>}/>
-                      <Route path="/dialogs/*" element={<Dialogs/>}/>
+                      <Route path="/" element={<Profile postDate={props.postDate}/>}/>
+                      <Route path="/dialogs/*" element={<Dialogs dialogsDate={props.dialogsDate}
+                                                                 messagesDate={props.messagesDate}/>}
+                      />
                       <Route path="/news" element={<News/>}/>
                       <Route path="/music" element={<Music/>}/>
                       <Route path="/settings" element={<Settings/>}/>

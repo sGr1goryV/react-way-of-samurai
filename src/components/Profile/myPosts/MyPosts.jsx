@@ -2,14 +2,10 @@ import React from "react";
 import Post from "./Post/Post";
 import styles from './MyPosts.module.css'
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-    let postDate = [
-        {message: 'hello', countLike: 4},
-        {message: 'i am lonely', countLike: 34},
-
-    ]
-    let postsElements = postDate.map((p) =>{
+    /*the data is in a file index.js*/
+    let postsElements = props.postDate.map((p) =>{
         return <Post message={p.message} countLike={p.countLike}/>
     })
 
