@@ -12,7 +12,7 @@ const Profile = (props) => {
 
         <div className={style.profile}>
             <ProfileInfo/>
-            <MyPosts postDate={props.postDate}/>
+            <MyPosts stageDates={props.stageDates}/>
         </div>
     )
 }

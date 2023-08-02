@@ -22,9 +22,8 @@ function App(props) {
               <Navbar />
               <div>
                   <Routes>
-                      <Route path="/" element={<Profile postDate={props.postDate}/>}/>
-                      <Route path="/dialogs/*" element={<Dialogs dialogsDate={props.dialogsDate}
-                                                                 messagesDate={props.messagesDate}/>}
+                      <Route path="/" element={<Profile stageDates={props.stageDates.profilePage}/>}/>
+                      <Route path="/dialogs/*" element={<Dialogs stageDates={props.stageDates.dialogsPage}/>}
                       />
                       <Route path="/news" element={<News/>}/>
                       <Route path="/music" element={<Music/>}/>

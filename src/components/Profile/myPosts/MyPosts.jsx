@@ -5,7 +5,7 @@ import styles from './MyPosts.module.css'
 const MyPosts = (props) => {
 
     /*the data is in a file index.js*/
-    let postsElements = props.postDate.map((p) =>{
+    let postsElements = props.stageDates.postDate.map((p) =>{
         return <Post message={p.message} countLike={p.countLike}/>
     })
 

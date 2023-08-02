@@ -9,10 +9,10 @@ const Dialogs = (props) => {
 
 
 
-    let diablogsElements = props.dialogsDate.map(d => {
+    let dialogsElements = props.stageDates.dialogsDate.map(d => {
         return <DialogItem id={d.id} name={d.name}/>
     })
-    let messagesElements = props.messagesDate.map(m => {
+    let messagesElements = props.stageDates.messagesDate.map(m => {
         return <MessagesItem id={m.id} message={m.message}/>
     })
 
@@ -21,7 +21,7 @@ const Dialogs = (props) => {
         <div className={styles.container}>
             <div className={styles.dialogs}>
                 <div className={styles.dialogs_items}>
-                    {diablogsElements}
+                    {dialogsElements}
                 </div>
                 <div className={styles.messages}>
                     {messagesElements}

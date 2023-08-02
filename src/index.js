@@ -3,34 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import stageDates_f from "./redux/stage";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-/*this date from component Profile*/
-let postDate = [
-    {message: 'hello', countLike: 4},
-    {message: 'i am lonely', countLike: 34},
-]
-
-/*this date from component Dialogs*/
-let dialogsDate = [
-    {id: 1, name: 'Joy'},
-    {id: 2, name: 'Officer'},
-    {id: 3, name: 'Butters'},
-    {id: 4, name: 'Kartman'},
-    {id: 5, name: 'Patrick'},
-]
-
-let messagesDate = [
-    {id: 1, message: 'oh you don\'t even smile'},
-    {id: 2, message: 'you got damn right'},
-    {id: 3, message: 'why?'}
-]
-
 root.render(
   <React.StrictMode>
-    <App postDate={postDate} dialogsDate={dialogsDate} messagesDate={messagesDate}/>
+    <App stageDates = {stageDates_f}/>
   </React.StrictMode>
 );
 
