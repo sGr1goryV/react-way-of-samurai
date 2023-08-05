@@ -9,6 +9,7 @@ import Music from "./components/Music/Music.jsx";
 import Settings from "./components/Settings/Settings.jsx";
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Friends from "./components/Friends/Friends";
 
 
 function App(props) {
@@ -19,7 +20,7 @@ function App(props) {
       <BrowserRouter>
           <div className="container">
               <Header />
-              <Navbar />
+              <Navbar stageDates = {props.stageDates.sidebar}/>
               <div>
                   <Routes>
                       <Route path="/" element={<Profile stageDates={props.stageDates.profilePage}/>}/>
@@ -28,6 +29,7 @@ function App(props) {
                       <Route path="/news" element={<News/>}/>
                       <Route path="/music" element={<Music/>}/>
                       <Route path="/settings" element={<Settings/>}/>
+                      <Route path="/friends" element={<Friends/>}/>
                   </Routes>
               </div>
           </div>

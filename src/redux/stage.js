@@ -22,6 +22,16 @@ let stageDates_f = {
         ]
     },
 
+    sidebar : {
+        friendsDate : [
+            {name: '@'},
+            {name: '@'},
+            {name: '@'},
+
+        ]
+
+    }
+
 
 }
 export default stageDates_f;

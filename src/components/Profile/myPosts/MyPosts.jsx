@@ -9,14 +9,21 @@ const MyPosts = (props) => {
         return <Post message={p.message} countLike={p.countLike}/>
     })
 
+
+    let newPostElement = React.createRef();
+    function addPost() {
+        let textId = newPostElement.current.value;
+        alert(textId)
+    }
+
     return (
             <div className={styles.container}>
                 <h2>my posts</h2>
                 <div>
-                    <textarea></textarea>
+                    <textarea ref={newPostElement}></textarea>
                 </div>
                 <div>
-                    <button>Post</button>
+                    <button onClick={addPost}>Post</button>
                 </div>
 
                 {postsElements}

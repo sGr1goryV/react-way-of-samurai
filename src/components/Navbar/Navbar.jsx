@@ -1,11 +1,17 @@
 import React from 'react';
 import styles from './Navbar.module.css';
 import {NavLink} from 'react-router-dom'
+import NavbarFriends from "./NavbarFriends/NavbarFriends";
 
 //this code is working
 const setActive = ({isActive}) => isActive ? styles.active : "";
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+    let friendsElements = props.stageDates.friendsDate.map(f => {
+         return <NavbarFriends name = {f.name}/>
+     })
+
     return (
         <div className={styles.navbar}>
             <ul>
@@ -14,6 +20,10 @@ const Navbar = () => {
                 <li className={styles.item}><NavLink to='/news' className = {setActive}>News</NavLink></li>
                 <li className={styles.item}><NavLink to='/music' className = {setActive}>Music</NavLink></li>
                 <li className={styles.item}><NavLink to='/settings' className = {setActive}>Settings</NavLink></li>
+                <li className={styles.item}><NavLink to='/friends' className = {setActive}>
+                    Friends
+                    <span className={styles.itemsFriends}>{friendsElements}</span></NavLink>
+                </li>
             </ul>
         </div>
     );

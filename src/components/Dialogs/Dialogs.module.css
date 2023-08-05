@@ -5,11 +5,11 @@
 }
 
 .dialogs {
-    width: 500px;
+    width: 600px;
     background-color: rgba(240, 248, 255, 0.29);
     color: #ffffff;
     display: grid;
-    grid-template-columns: 200px 300px;
+    grid-template-columns: 200px 200px 300px;
     grid-template-rows: 250px;
     font-size: 15px;
 }

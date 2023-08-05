@@ -22,3 +22,8 @@
     font-weight: 500;
 }
 
+/*Friends*/
+.item .itemsFriends {
+    display: block;
+}
+
