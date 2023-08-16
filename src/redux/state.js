@@ -1,12 +1,14 @@
-let stageDates_f = {
+import {rerenderEntireTree} from "../render";
+
+let stateDates_f = {
 
     profilePage : {
         postDate : [
             {message: 'hello', countLike: 4},
             {message: 'i am lonely', countLike: 34},
         ],
+        newPostText: 'hello',
     },
-
     dialogsPage : {
         dialogsDate : [
             {id: 1, name: 'Joy'},
@@ -21,17 +23,26 @@ let stageDates_f = {
             {id: 3, message: 'why?'}
         ]
     },
-
     sidebar : {
         friendsDate : [
             {name: '@'},
             {name: '@'},
             {name: '@'},
-
         ]
-
     }
-
-
 }
-export default stageDates_f;
+
+export default stateDates_f;
+export let addPost = (newMessage) => {
+    let newPost = {
+        message: newMessage,
+        countLike: 0
+    };
+    stateDates_f.profilePage.postDate.push(newPost)
+    rerenderEntireTree(stateDates_f  );
+}
+
+export let updateNewPostText = (textValue) => {
+    stateDates_f.profilePage.newPostText = textValue;
+    rerenderEntireTree(stateDates_f);
+}

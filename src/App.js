@@ -14,18 +14,17 @@ import Friends from "./components/Friends/Friends";
 
 function App(props) {
 
-
-
   return (
       <BrowserRouter>
           <div className="container">
               <Header />
-              <Navbar stageDates = {props.stageDates.sidebar}/>
+              <Navbar stateDates = {props.stateDates.sidebar}/>
               <div>
                   <Routes>
-                      <Route path="/" element={<Profile stageDates={props.stageDates.profilePage}/>}/>
-                      <Route path="/dialogs/*" element={<Dialogs stageDates={props.stageDates.dialogsPage}/>}
-                      />
+                      <Route path="/" element={<Profile profilePage={props.stateDates.profilePage}
+                                                        addPost={props.addPost}
+                                                        updateNewPostText={props.updateNewPostText}/>}/>
+                      <Route path="/dialogs/*" element={<Dialogs stateDates={props.stateDates.dialogsPage}/>}/>
                       <Route path="/news" element={<News/>}/>
                       <Route path="/music" element={<Music/>}/>
                       <Route path="/settings" element={<Settings/>}/>

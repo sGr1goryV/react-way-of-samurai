@@ -9,10 +9,10 @@ const Dialogs = (props) => {
 
 
 
-    let dialogsElements = props.stageDates.dialogsDate.map(d => {
+    let dialogsElements = props.stateDates.dialogsDate.map(d => {
         return <DialogItem id={d.id} name={d.name}/>
     })
-    let messagesElements = props.stageDates.messagesDate.map(m => {
+    let messagesElements = props.stateDates.messagesDate.map(m => {
         return <MessagesItem id={m.id} message={m.message}/>
     })
 

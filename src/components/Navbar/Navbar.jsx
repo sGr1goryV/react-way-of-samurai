@@ -8,7 +8,7 @@ const setActive = ({isActive}) => isActive ? styles.active : "";
 
 const Navbar = (props) => {
 
-    let friendsElements = props.stageDates.friendsDate.map(f => {
+    let friendsElements = props.stateDates.friendsDate.map(f => {
          return <NavbarFriends name = {f.name}/>
      })
 
